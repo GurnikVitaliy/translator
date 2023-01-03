@@ -90,3 +90,19 @@ btn.addEventListener('click', function() {
        inp2.value = '';
     }
 })
+
+const play = document.getElementById('btn');
+const count = document.getElementById('count');
+
+function f() {
+    let i = 1;
+    return function() {
+        count.innerHTML = i++;
+    }
+}
+
+const res = f();
+
+play.addEventListener('click', () => {
+   res();
+})

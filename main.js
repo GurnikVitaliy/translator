@@ -91,7 +91,7 @@ btn.addEventListener('click', function() {
     }
 })
 
-const play = document.getElementById('btn');
+const play = document.getElementById('btn2');
 const count = document.getElementById('count');
 
 function f() {

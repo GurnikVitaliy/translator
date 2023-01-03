@@ -15,7 +15,7 @@
 #table tr td {
 	background-color: black;
 	color: aliceblue;
-	width: 100%;
+	width: 120px;
 	text-align: center;
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -31,7 +31,7 @@
 }
 
 input {
-	width: 100%;
+	width: 120px;
 	height: 40px;
 	text-align: center;
 	background-color: black;
@@ -39,3 +39,5 @@ input {
 }
 
 .er{ border: 3px solid red; }
+
+

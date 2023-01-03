@@ -11,10 +11,11 @@
 	padding: 0.5px;
 }
 #table {margin-top: 30px;}
+
 #table tr td {
 	background-color: black;
 	color: aliceblue;
-	width: 233px;
+	width: auto;
 	text-align: center;
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -30,7 +31,7 @@
 }
 
 input {
-	width: 700px;
+	width: auto;
 	height: 40px;
 	text-align: center;
 	background-color: black;

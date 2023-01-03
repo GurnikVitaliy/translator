@@ -23,7 +23,7 @@
 }
 
 #btn {
-	width: 90%;
+	width: 120px;
 	border: 0;
 	height: 40px;
 	background-color: black;
@@ -39,5 +39,12 @@ input {
 }
 
 .er{ border: 3px solid red; }
+
+.div2 {
+	width: auto;
+	padding: 30px;
+	margin: 10px auto;
+	background-color: darkorange;
+}
 
 

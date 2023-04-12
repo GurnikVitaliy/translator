@@ -1,108 +1,35 @@
 
-// const btnSend  = document.getElementById('btn-send');
-// const title = document.getElementById('title');
-// const text = document.getElementById('text');
+// https://api.telegram.org/bot6056299567:AAGocFD7VobQgbcKOx9a3GJ6wBigB3WjEWc/sendMessage?chat_id=1201316750&text=cool_12'
 
-// function createNewMsg(user) {
+// 'https://api.telegram.org/bot6056299567:AAGocFD7VobQgbcKOx9a3GJ6wBigB3WjEWc/getUpdates'
 
-//     const li = document.createElement('li');
-//           li.innerHTML = user.name;
-//           title.append(li);
-     
-//     const li2 = document.createElement('li');
-//           li2.innerHTML = user.msg;
-//           text.append(li2);
+// ALINA
+const btn1 = document.querySelector('#btn1');
+const token1 = '6050757748:AAE0SlqzlC9im6u5LJpO0k30O4xxT8WLeT8';
 
-// }
+btn1.addEventListener('click', () => {
+    const input = document.querySelector('#input1');
 
+    let inp1 = input.value;
+    const url = 'https://api.telegram.org/bot'+token1+'/sendMessage?chat_id=1201316750&text=';
+    let xttp = new XMLHttpRequest();
 
-
-// btnSend.addEventListener('click',function () {
-
-//     const inpName = document.getElementById('name').value;
-//     const inpMsg = document.getElementById('msg').value;
-
-
-//     let user = {
-//         name : inpName,
-//         msg : inpMsg
-//     } 
-
-//     createNewMsg(user);
-          
-//     document.getElementById('name').value = '';
-//     document.getElementById('msg').value = ''
-// })
-
-
-
-
-
-const inp1 = document.getElementById('inp1'),
-      inp2 = document.getElementById('inp2'),
-      inputs = document.querySelectorAll('input'),
-      btn = document.getElementById('btn'),
-      table = document.getElementById('table');
-
-let words;
-
-localStorage.length < 1 ? words = [] : words = JSON.parse(localStorage.getItem('data'));
-
-class createWord {
-    constructor(translate, russian) {
-        this.translate = translate;
-        this.russian = russian;
-    }
-}      
-
-const addWordToTable = index =>  {
-    table.innerHTML += `
-        <tr>
-            <td>${words[index].translate}</td>
-            <td><td>${words[index].russian}</td></td>
-        </tr>
-    `
-}
-
-words.forEach(function(item, index) {
-    addWordToTable(index);
+    xttp.open("GET", url+inp1);
+    xttp.send();
 })
 
-btn.addEventListener('click', function() {
-    if (inp1.value.length < 2 ||
-        inp2.value.length < 2 ||
-        !isNaN(inp1.value)    ||
-        !isNaN(inp2.value)
-    ) {
-        for(let input of inputs) {
-            input.classList.add('er');
-        }
-    }
-    else {
-        for(let input of inputs) {
-            input.classList.remove('er');
-        }
-        words.push(new createWord(inp1.value, inp2.value));
-        localStorage.setItem('data', JSON.stringify(words));
-        addWordToTable(words.length -1);
 
-       inp1.value = '';
-       inp2.value = '';
-    }
-})
+// Кристина
+const btn2 = document.querySelector('#btn2');
+const token2 = '6036356654:AAHW93KddrrOgNunuxzzOIDInznOWUxHhi0';
 
-const play = document.getElementById('btn2');
-const count = document.getElementById('count');
+btn2.addEventListener('click', () => {
+    const input2 = document.querySelector('#input2');
 
-function f() {
-    let i = 1;
-    return function() {
-        count.innerHTML = i++;
-    }
-}
+    let inp2 = input2.value;
+    const url = 'https://api.telegram.org/bot'+token2+'/sendMessage?chat_id=1201316750&text=';
+    let xttp = new XMLHttpRequest();
 
-const res = f();
-
-play.addEventListener('click', () => {
-   res();
+    xttp.open("GET", url+inp2);
+    xttp.send();
 })

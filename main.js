@@ -16,6 +16,7 @@ btn1.addEventListener('click', () => {
 
     xttp.open("GET", url+inp1);
     xttp.send();
+    input1.value='';
 })
 
 
@@ -32,4 +33,5 @@ btn2.addEventListener('click', () => {
 
     xttp.open("GET", url+inp2);
     xttp.send();
+    
 })

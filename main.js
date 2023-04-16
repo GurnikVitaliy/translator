@@ -8,6 +8,7 @@ const btn1 = document.querySelector('#btn1');
 const token1 = '6050757748:AAE0SlqzlC9im6u5LJpO0k30O4xxT8WLeT8';
 
 btn1.addEventListener('click', () => {
+     setTimeout(() => {
     const input = document.querySelector('#input1');
 
     let inp1 = input.value;
@@ -17,6 +18,7 @@ btn1.addEventListener('click', () => {
     xttp.open("GET", url+inp1);
     xttp.send();
     input1.value='';
+     },300000)
 })
 
 

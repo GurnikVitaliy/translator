@@ -18,7 +18,7 @@ btn1.addEventListener('click', () => {
     xttp.open("GET", url+inp1);
     xttp.send();
     input1.value='';
-     },300000)
+     },10000)
 })
 
 

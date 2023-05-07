@@ -23,17 +23,20 @@ btn1.addEventListener('click', () => {
 
 
 // Кристина
-const btn2 = document.querySelector('#btn2');
-const token2 = '6036356654:AAHW93KddrrOgNunuxzzOIDInznOWUxHhi0';
-
-btn2.addEventListener('click', () => {
-    const input2 = document.querySelector('#input2');
-
-    let inp2 = input2.value;
-    const url = 'https://api.telegram.org/bot'+token2+'/sendMessage?chat_id=1201316750&text=';
-    let xttp = new XMLHttpRequest();
-
-    xttp.open("GET", url+inp2);
-    xttp.send();
-    
-})
+setInterval(() =>{
+  const btn2 = document.querySelector('#btn2');
+  const token2 = '6036356654:AAHW93KddrrOgNunuxzzOIDInznOWUxHhi0';
+  
+  btn2.addEventListener('click', () => {
+      const input2 = document.querySelector('#input2');
+  
+      let inp2 = input2.value;
+      const url = 'https://api.telegram.org/bot'+token2+'/sendMessage?chat_id=1201316750&text=';
+      let xttp = new XMLHttpRequest();
+  
+      xttp.open("GET", url+inp2);
+      xttp.send();
+      
+  })
+  
+},10000)

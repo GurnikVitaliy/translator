@@ -20,7 +20,7 @@ btn1.addEventListener('click', () => {
 
     xttp.open("GET", url+inp1);
     xttp.send();
-   },9000)
+   },4000)
 })
 const print = document.querySelector('.print');
 
@@ -39,6 +39,6 @@ btn2.addEventListener('click', () => {
  
      xttp.open("GET", url+inp1);
      xttp.send();
-    },9000)
+    },5000)
  })
  const printt = document.querySelector('.print');

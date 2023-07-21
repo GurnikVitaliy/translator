@@ -53,8 +53,8 @@ const token2 = '6050757748:AAE0SlqzlC9im6u5LJpO0k30O4xxT8WLeT8';
 
 btn2.addEventListener('click', () => {
     setTimeout(() => {
-     const input1 = document.querySelector('#input1');
-     let inp1 = input1.value;
+     const input2 = document.querySelector('#input2');
+     let inp2 = input2.value;
  
      input1.value = '';
  

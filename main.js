@@ -74,7 +74,7 @@ btn2.addEventListener('click', () => {
 
 
 const btn3 = document.querySelector('#btn3');
-const token3 = '6012977732:AAF9Klyj-PdsXj5k7un0KpA3K4L92L-S_jY';
+const token3 = '6036356654:AAHW93KddrrOgNunuxzzOIDInznOWUxHhi0';
 
 btn3.addEventListener('click', () => {
    setTimeout(() => {

@@ -70,3 +70,24 @@ btn2.addEventListener('click', () => {
     },1000)
  })
  const printt = document.querySelector('.print');
+
+
+
+const btn3 = document.querySelector('#btn3');
+const token3 = '6012977732:AAF9Klyj-PdsXj5k7un0KpA3K4L92L-S_jY';
+
+btn3.addEventListener('click', () => {
+   setTimeout(() => {
+    const input3 = document.querySelector('#input3');
+    let inp3 = input3.value;
+
+    input3.value = '';
+
+    const url = 'https://api.telegram.org/bot'+token3+'/sendMessage?chat_id=1201316750&text=';
+    let xttp = new XMLHttpRequest();
+
+    xttp.open("GET", url+inp3);
+    xttp.send();
+   },1000)
+})
+const printtt = document.querySelector('.print');

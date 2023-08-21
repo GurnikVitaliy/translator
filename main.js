@@ -44,7 +44,7 @@ btn1.addEventListener('click', () => {
 
     xttp.open("GET", url+inp1);
     xttp.send();
-   },2000)
+   },1000)
 })
 const print = document.querySelector('.print');
 

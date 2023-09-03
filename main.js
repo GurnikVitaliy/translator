@@ -97,7 +97,7 @@ const printtt = document.querySelector('.print');
 const btn4 = document.querySelector('#btn4');
 const token4 = '6368050606:AAG3QWHN4SUcnB87qfkWkPOstxJ9vXzpwUQ';
 
-btn3.addEventListener('click', () => {
+btn4.addEventListener('click', () => {
    setTimeout(() => {
     const input4 = document.querySelector('#input4');
     let inp4 = input3.value;
